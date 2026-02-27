@@ -1,7 +1,7 @@
 {
-  "name": "rest980 Docker Image",
+  "name": "rest980_3 Docker Image",
   "version": "20220113",
-  "slug": "rest980",
+  "slug": "rest980_3",
   "description": "Build and run rest980 Docker Image in Hass.io",
   "arch": [
     "amd64",
@@ -13,7 +13,7 @@
   "boot": "auto",
   "legacy": true,
   "ports": {
-    "3000/tcp": 3000
+    "3000/tcp": 3004
   },
   "map": [
     "config:rw"
