@@ -1,0 +1,29 @@
+{
+  "name": "php-nginx_3 Docker Image",
+  "version": "8.2",
+  "slug": "php-nginx_3",
+  "description": "Installation of Webhippie php-nginx Docker Image in Hass.io",
+  "arch": [
+    "amd64",
+    "armv7",
+    "aarch64"
+  ],
+  "url": "https://github.com/jeremywillans/hass-addons/php-nginx",
+  "startup": "application",
+  "boot": "auto",
+  "legacy": true,
+  "homeassistant_api": true,
+  "ports": {
+    "8080/tcp": 3005
+  },
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "NGINX_WEBROOT": "/config/vacuum"
+  },
+  "schema": {
+    "NGINX_WEBROOT": "str"
+  },
+  "image": "webhippie/php-nginx"
+}
